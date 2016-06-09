@@ -1,6 +1,6 @@
 var navigatorVec = new (function() {
-	// var path = './exam/vector_I/';
-	var path = 'https://media.githubusercontent.com/media/mcrozz/backupsite/gh-pages/test/exam/vector_I/';
+	var path = './exam/vector_I/';
+	// var path = 'https://media.githubusercontent.com/media/mcrozz/backupsite/gh-pages/test/exam/vector_I/';
 	var images = {
 		'0' : ['_2', '_3', '_4', '_5'],
 		'2' : ['_1', '_2', '_3', '_4', '_5'],
