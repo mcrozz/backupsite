@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vector Analysis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/vectorExam_I.js"></script>
+	<style type="text/css">
+		a {
+			display: block;
+		}
+		html, body {
+			margin: 0;
+		}
+		#viewer, #selector {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		#selector {
+			margin: 2%;
+		}
+		#viewer {
+			display: none;
+		}
+		#viewer>div {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			background: rgba(255,255,255,0.55);
+		}
+		#viewer>img {
+			width: 100%;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="selector">
+		Билеты с 2016 (без решения) [преподаватель Азерников]
+		<a href="#ticket=p2">Билет №2</a>
+		<a href="#ticket=p6">Билет №6</a>
+		<a href="#ticket=p7">Билет №7</a>
+		<a href="#ticket=p8">Билет №8</a>
+		<a href="#ticket=p12">Билет №12</a>
+		<a href="#ticket=p13">Билет №13</a>
+		<a href="#ticket=p15">Билет №15</a>
+		<a href="#ticket=p16">Билет №16</a>
+		<a href="#ticket=p20">Билет №20</a>
+		<a href="#ticket=p22">Билет №22</a>
+		<a href="#ticket=p24">Билет №24</a>
+		<br>
+		Билеты с 2015-2016 (решенные) [преподаватель Азерников]
+		<a href="#ticket=0">Билет №0</a>
+		<a href="#ticket=2">Билет №2</a>
+		<a href="#ticket=2.2">Билет №2 (v.2)</a>
+		<a href="#ticket=4">Билет №4</a>
+		<a href="#ticket=6">Билет №6</a>
+		<a href="#ticket=6.6">Билет №6 (v.2)</a>
+		<a href="#ticket=8">Билет №8</a>
+		<a href="#ticket=8.8">Билет №8 (v.2)</a>
+		<a href="#ticket=9">Билет №9</a>
+		<a href="#ticket=9.9">Билет №9 (v.2)</a>
+		<a href="#ticket=10">Билет №10</a>
+		<a href="#ticket=10.10">Билет №10 (v.2)</a>
+		<a href="#ticket=11">Билет №11</a>
+		<a href="#ticket=11.11">Билет №11 (v.2)</a>
+		<a href="#ticket=12">Билет №12</a>
+		<a href="#ticket=21">Билет №21</a>
+		<a href="#ticket=21.21">Билет №21</a>
+		<a href="#ticket=23">Билет №23</a>
+		<br>
+		Билеты с 2015 (без решения)
+		<a href="#ticket=s">Билеты (3) [преподаватель Нырко]</a>
+		<br>
+		<a href="http://math.semestr.ru/line/curve.php">Приведение кривой второго порядка к каноническому виду</a>
+	</div>
+
+	<div id="viewer">
+		<img src=""></img>
+		<div>
+			<a style="display:inline">0/0</a>
+			<button id="prev">Предыдущий</button>
+			<button id="next">Следующий</button>
+			<button id="close">Закрыть</button>
+		</div>
+	</div>
+</body>
+</html>
