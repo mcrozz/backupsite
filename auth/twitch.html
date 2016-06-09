@@ -19,12 +19,14 @@
 			xhr.send();
 			xhr.onreadystatechange = function() {
 				// redirect to extension...
-				if (xhr.readyState == 4 && xhr.status == 200) 
-					window.location.replace(u+(location.search||location.hash));
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					console.log(xhr.readyState+" // "+xhr.status);
+					//window.location.replace(u+(location.search||location.hash));
+				}
 			}
 		};
 		// nope, script failed
-		document.body.innerHTML += "<h1>FAILED AT DETECTION OF EXTENSION URL</h1>";
+		document.body.innerHTML += '<h1>Cannot detect your extension</h1>\n<br><input type="button" href="chrome-extension://'+toCheck[0]+'/auth.html'+(location.search||location.hash)+'" value="Opera">\n<input type="button" href="chrome-extension://'+toCheck[2]+'/auth.html'+(location.search||location.hash)+'" value="Chrome">';
 	};
 	getURI();
 	</script>
